@@ -5,13 +5,17 @@ import { faGlobeAfrica } from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
   const icon = <FontAwesomeIcon icon={faGlobeAfrica} />;
   return (
-    <div className="header">
-      <div className="container">
-        <div className="header-content">
-          <span className="globe">{icon}</span>
-          <h3 className="title">my travel journal.</h3>
+    <div>
+      <section className="intro">
+        <div className="container intro-row">
+          <div className="intro-col">
+            <i className="world-icon">{icon}</i>
+          </div>
+          <div className="intro-col">
+            <h2>My travel journal</h2>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
